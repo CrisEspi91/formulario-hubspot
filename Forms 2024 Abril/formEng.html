@@ -1,0 +1,145 @@
+<div id="formTarget">
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js">    
+    </script>
+</div>
+    <script>
+      hbspt.forms.create ({
+        region: "na1",
+        portalId: "2960453",
+        formId: "eabc96ff-f420-403b-b66e-60a090fd95df",
+        css: "",
+        target: "#formTarget",
+        onFormSubmit: function($form) {
+            // YOUR SCRIPT HERE
+            
+            const selectedEmployees = document.querySelector('input[name="0-2/numberofemployees"]').value;
+            const selectedCountry = document.querySelector('select[name="country"]').value;
+            
+            let Mica = "https://meetings.hubspot.com/micaela-borro/web-demo";
+            let Cande = "https://meetings.hubspot.com/candelaria-beato/web-demo-eng";
+            let CandeSpa = "https://meetings.hubspot.com/candelaria-beato/web-demo-esp"
+            let Marce = "https://meetings.hubspot.com/marcelo-ferrera/web-demo-marcelo"
+
+            
+            // MICA - BRAZIL
+             if ((selectedEmployees > 70) && (selectedCountry == "Brazil")) {
+              window.location = Mica;
+
+
+            // MARCE - BRAZIL
+            } else if ((selectedEmployees > 15 && selectedEmployees <= 70) && (selectedCountry == "Brazil")) {
+              window.location = Marce;
+            
+            // CANDE - NAM
+            } else if ((selectedEmployees > 70) && (selectedCountry == "United States" || selectedCountry == "Canada" )) {
+              window.location = Cande;
+
+
+            // CANDE - NAM
+            } else if ((selectedEmployees > 15 && selectedEmployees <= 70) && (selectedCountry == "United States" || selectedCountry == "Canada" )) {
+              window.location = Cande;
+              
+           //  MICA - LATAM
+            } else if ((selectedEmployees > 200) && (selectedCountry == "Argentina" || selectedCountry == "Bahamas" || selectedCountry == "Bolivia" || selectedCountry == "Chile" || selectedCountry == "Colombia" || selectedCountry == "Costa Rica" || selectedCountry == "Dominican Republic" || selectedCountry == "Ecuador" || selectedCountry == "Haiti" || selectedCountry == "Honduras" || selectedCountry == "El Salvador" || selectedCountry == "Mexico" || selectedCountry == "Nicaragua" || selectedCountry == "Panama" || selectedCountry == "Paraguay" || selectedCountry == "Peru" || selectedCountry == "Uruguay" || selectedCountry == "Puerto Rico" || selectedCountry == "Venezuela"  || selectedCountry == "Guatemala" || selectedCountry == "Jamaica")){
+              window.location = Mica;
+           
+           //  MICA - LATAM
+            } else if ((selectedEmployees > 70 && selectedEmployees <= 200) && (selectedCountry == "Argentina" || selectedCountry == "Bahamas" || selectedCountry == "Bolivia" || selectedCountry == "Chile" || selectedCountry == "Colombia" || selectedCountry == "Costa Rica" || selectedCountry == "Dominican Republic" || selectedCountry == "Ecuador" || selectedCountry == "Haiti" || selectedCountry == "Honduras" || selectedCountry == "El Salvador" || selectedCountry == "Mexico" || selectedCountry == "Nicaragua" || selectedCountry == "Panama" || selectedCountry == "Paraguay" || selectedCountry == "Peru" || selectedCountry == "Uruguay" || selectedCountry == "Puerto Rico" || selectedCountry == "Venezuela"  || selectedCountry == "Guatemala" || selectedCountry == "Jamaica")){
+              window.location = Mica;
+
+
+           //  CANDE - LATAM
+            } else if ((selectedEmployees > 15 && selectedEmployees <= 70) && (selectedCountry == "Argentina" || selectedCountry == "Bahamas" || selectedCountry == "Bolivia" || selectedCountry == "Chile" || selectedCountry == "Colombia" || selectedCountry == "Costa Rica" || selectedCountry == "Dominican Republic" || selectedCountry == "Ecuador" || selectedCountry == "Haiti" || selectedCountry == "Honduras" || selectedCountry == "El Salvador" || selectedCountry == "Mexico" || selectedCountry == "Nicaragua" || selectedCountry == "Panama" || selectedCountry == "Paraguay" || selectedCountry == "Peru" || selectedCountry == "Uruguay" || selectedCountry == "Puerto Rico" || selectedCountry == "Venezuela"  || selectedCountry == "Guatemala" || selectedCountry == "Jamaica")){
+              window.location = CandeSpa;
+              
+          // MICA - SPAIN
+            } else if ((selectedEmployees > 200) && (selectedCountry == "Spain")) {
+              window.location = Mica;
+              
+          // MICA - SPAIN
+            } else if ((selectedEmployees > 70 && selectedEmployees <= 200) && (selectedCountry == "Spain")) {
+              window.location = Mica;
+
+
+          // CANDE - SPAIN
+            } else if ((selectedEmployees > 15 && selectedEmployees <= 70) && (selectedCountry == "Spain")) {
+              window.location = CandeSpa;
+              
+          // CANDE - EMEA
+            } else if ((selectedEmployees > 70) && (selectedCountry == "Albania" || selectedCountry == "Andorra" || selectedCountry == "Austria" || selectedCountry == "Belarus" || selectedCountry == "Belgium" || selectedCountry == "Bulgaria" || selectedCountry == "Croatia" || selectedCountry == "Cyprus" || selectedCountry == "Czech Republic" || selectedCountry == "Denmark" || selectedCountry == "Finland" || selectedCountry == "France" || selectedCountry == "Germany" || selectedCountry == "Greece" || selectedCountry == "Hungary" || selectedCountry == "Iceland" || selectedCountry == "Italy" || selectedCountry == "Kosovo" || selectedCountry == "Latvia" || selectedCountry == "Liechtenstein" || selectedCountry == "Lithuania" || selectedCountry == "Luxembourg" || selectedCountry == "Macedonia" || selectedCountry == "Malta" || selectedCountry == "Moldova" || selectedCountry == "Monaco" || selectedCountry == "Montenegro" || selectedCountry == "Netherlands" || selectedCountry == "Norways" || selectedCountry == "Poland" || selectedCountry == "Portugal" || selectedCountry == "Romania" || selectedCountry == "Russia" || selectedCountry == "San Marino" || selectedCountry == "Serbia" || selectedCountry == "Slovakia" || selectedCountry == "Slovenia" || selectedCountry == "Sweden" || selectedCountry == "Switzerland" || selectedCountry == "Ukraine" || selectedCountry == "United Kingdom" || selectedCountry == "Vatican City" || selectedCountry == "Ireland" || selectedCountry == "Estonia" || selectedCountry == "Bosnia and Herzegovina" || selectedCountry == "Bahrain" || selectedCountry == "Iran" || selectedCountry == "Iraq" || selectedCountry == "Israel" || selectedCountry == "Jordan" || selectedCountry == "Kuwait" || selectedCountry == "Lebanon" || selectedCountry == "Oman" || selectedCountry == "Qatar" || selectedCountry == "Saudi Arabia" || selectedCountry == "Syria" || selectedCountry == "Turkey" || selectedCountry == "United Arab Emirates" || selectedCountry == "Yemen" || selectedCountry == "Algeria" || selectedCountry == "Angola" || selectedCountry == "Benin" || selectedCountry == "Botswana" || selectedCountry == "Burundi" || selectedCountry == "Cameroon" || selectedCountry == "Cape Verde" || selectedCountry == "Chad" || selectedCountry == "Comoros" || selectedCountry == "Congo {Democratic Rep}" || selectedCountry == "Djibouti" || selectedCountry == "Egypt" || selectedCountry == "Equatorial" || selectedCountry == "Guinea" || selectedCountry == "Eritrea" || selectedCountry == "Ethiopia" || selectedCountry == "Gabon" || selectedCountry == "Gambia" || selectedCountry == "Ghana" || selectedCountry == "Guinea" || selectedCountry == "Ivory Coast" || selectedCountry == "Lesotho" || selectedCountry == "Liberia" || selectedCountry == "Libya" || selectedCountry == "Madagascar" || selectedCountry == "Malawi" || selectedCountry == "Mali" || selectedCountry == "Mauritana" || selectedCountry == "Mauritius" || selectedCountry == "Morocco" || selectedCountry == "Mozambique" || selectedCountry == "Namibia" || selectedCountry == "Niger" || selectedCountry == "Nigeria" || selectedCountry == "Rwanda" || selectedCountry == "Sao Tome & Principe" || selectedCountry == "Senegal" || selectedCountry == "Seychelles" || selectedCountry == "Sierra Leone" || selectedCountry == "Somalia" || selectedCountry == "South Africa" || selectedCountry == "South Sudan" || selectedCountry == "Swaziland" || selectedCountry == "Tanzania" || selectedCountry == "Togo" || selectedCountry == "Tunisia" || selectedCountry == "Uganda" || selectedCountry == "Zambia" || selectedCountry == "Zimbabwe" || selectedCountry == "Azerbaijan" || selectedCountry == "Côte d’Ivoire" || selectedCountry == "Armenia" || selectedCountry == "Central African Republic" || selectedCountry == "Guinea Bissau")) {
+              window.location = Cande;
+
+
+          // CANDE - EMEA
+            } else if ((selectedEmployees > 15 && selectedEmployees <= 70) && (selectedCountry == "Albania" || selectedCountry == "Andorra" || selectedCountry == "Austria" || selectedCountry == "Belarus" || selectedCountry == "Belgium" || selectedCountry == "Bulgaria" || selectedCountry == "Croatia" || selectedCountry == "Cyprus" || selectedCountry == "Czech Republic" || selectedCountry == "Denmark" || selectedCountry == "Finland" || selectedCountry == "France" || selectedCountry == "Germany" || selectedCountry == "Greece" || selectedCountry == "Hungary" || selectedCountry == "Iceland" || selectedCountry == "Italy" || selectedCountry == "Kosovo" || selectedCountry == "Latvia" || selectedCountry == "Liechtenstein" || selectedCountry == "Lithuania" || selectedCountry == "Luxembourg" || selectedCountry == "Macedonia" || selectedCountry == "Malta" || selectedCountry == "Moldova" || selectedCountry == "Monaco" || selectedCountry == "Montenegro" || selectedCountry == "Netherlands" || selectedCountry == "Norways" || selectedCountry == "Poland" || selectedCountry == "Portugal" || selectedCountry == "Romania" || selectedCountry == "Russia" || selectedCountry == "San Marino" || selectedCountry == "Serbia" || selectedCountry == "Slovakia" || selectedCountry == "Slovenia" || selectedCountry == "Sweden" || selectedCountry == "Switzerland" || selectedCountry == "Ukraine" || selectedCountry == "United Kingdom" || selectedCountry == "Vatican City" || selectedCountry == "Ireland" || selectedCountry == "Estonia" || selectedCountry == "Bosnia and Herzegovina" || selectedCountry == "Bahrain" || selectedCountry == "Iran" || selectedCountry == "Iraq" || selectedCountry == "Israel" || selectedCountry == "Jordan" || selectedCountry == "Kuwait" || selectedCountry == "Lebanon" || selectedCountry == "Oman" || selectedCountry == "Qatar" || selectedCountry == "Saudi Arabia" || selectedCountry == "Syria" || selectedCountry == "Turkey" || selectedCountry == "United Arab Emirates" || selectedCountry == "Yemen" || selectedCountry == "Algeria" || selectedCountry == "Angola" || selectedCountry == "Benin" || selectedCountry == "Botswana" || selectedCountry == "Burundi" || selectedCountry == "Cameroon" || selectedCountry == "Cape Verde" || selectedCountry == "Chad" || selectedCountry == "Comoros" || selectedCountry == "Congo {Democratic Rep}" || selectedCountry == "Djibouti" || selectedCountry == "Egypt" || selectedCountry == "Equatorial" || selectedCountry == "Guinea" || selectedCountry == "Eritrea" || selectedCountry == "Ethiopia" || selectedCountry == "Gabon" || selectedCountry == "Gambia" || selectedCountry == "Ghana" || selectedCountry == "Guinea" || selectedCountry == "Ivory Coast" || selectedCountry == "Lesotho" || selectedCountry == "Liberia" || selectedCountry == "Libya" || selectedCountry == "Madagascar" || selectedCountry == "Malawi" || selectedCountry == "Mali" || selectedCountry == "Mauritana" || selectedCountry == "Mauritius" || selectedCountry == "Morocco" || selectedCountry == "Mozambique" || selectedCountry == "Namibia" || selectedCountry == "Niger" || selectedCountry == "Nigeria" || selectedCountry == "Rwanda" || selectedCountry == "Sao Tome & Principe" || selectedCountry == "Senegal" || selectedCountry == "Seychelles" || selectedCountry == "Sierra Leone" || selectedCountry == "Somalia" || selectedCountry == "South Africa" || selectedCountry == "South Sudan" || selectedCountry == "Swaziland" || selectedCountry == "Tanzania" || selectedCountry == "Togo" || selectedCountry == "Tunisia" || selectedCountry == "Uganda" || selectedCountry == "Zambia" || selectedCountry == "Zimbabwe" || selectedCountry == "Azerbaijan" || selectedCountry == "Côte d’Ivoire" || selectedCountry == "Armenia" || selectedCountry == "Central African Republic" || selectedCountry == "Guinea Bissau")) {
+              window.location = Cande;
+
+               // WW SMB - CANDE  
+            }else if ((selectedEmployees > 15) && (selectedEmployees <= 70)) { 
+                window.location = Cande;
+            
+
+              
+    
+            }else if ((selectedCountry == "Afghanistan" || selectedCountry == "Australia" || selectedCountry == "Bangladesh" || selectedCountry == "Bhutan" || selectedCountry == "Brunei" || selectedCountry == "Cambodia" || selectedCountry == "China" || selectedCountry == "Fiji" || selectedCountry == "Hong Kong" || selectedCountry == "India" || selectedCountry == "Indonesia" || selectedCountry == "Japan" || selectedCountry == "Kiribati" || selectedCountry == "Laos" || selectedCountry == "Malaysia" || selectedCountry == "Maldives" || selectedCountry == "Marshall Islands" || selectedCountry == "Micronesia" || selectedCountry == "Mongolia" || selectedCountry == "Myanmar" || selectedCountry == "Nauru" || selectedCountry == "Nepal" || selectedCountry == "New Zealand" || selectedCountry == "Pakistan" || selectedCountry == "Palau" || selectedCountry == "Papua New Guinea" || selectedCountry == "Philippines" || selectedCountry == "Samoa" || selectedCountry == "Singapore" || selectedCountry == "Solomon Islands" || selectedCountry == "South Korea" || selectedCountry == "Sri Lanka" || selectedCountry == "Taiwan" || selectedCountry == "Thailand" || selectedCountry == "East Timor" || selectedCountry == "Tonga" || selectedCountry == "Tuvalu" || selectedCountry == "Vanuatu" || selectedCountry == "Vietnam")){
+                const form = document.getElementById('form')
+              const container = form.parentNode
+              const mensaje = document.createElement('p')
+              mensaje.style.fontSize = '21px'
+              mensaje.style.color = '#2b2b2d'
+              mensaje.style.fontWeight = '600'
+              mensaje.style.width = '50%'
+              mensaje.style.margin = '10px auto 100px auto'
+              mensaje.style.padding = '20px'
+              mensaje.style.background = '#FFEB99'
+              mensaje.style.borderRadius = '10px'
+              // Mensaje antes del link
+              mensaje.textContent = 'Thank you for your interest in COR! Visit'
+              const enlace = document.createElement('span')
+              enlace.id = 'enlace'
+              mensaje.appendChild(enlace)
+              // Mensaje despues del link
+              mensaje.insertAdjacentText('beforeend', ' to manage your purchase and start using COR in your organization.')
+              const a = document.createElement('a')
+              a.style.color = '#00C977'
+              a.style.color
+              a.href = 'https://projectcor.com/pricing/'
+              // Nombre del Link
+              a.textContent = ' this page'
+              enlace.appendChild(a)
+              container.removeChild(form)
+              container.appendChild(mensaje)     
+            }   else if (selectedEmployees <=15) {
+                const form = document.getElementById('form')
+              const container = form.parentNode
+              const mensaje = document.createElement('p')
+              mensaje.style.fontSize = '21px'
+              mensaje.style.color = '#2b2b2d'
+              mensaje.style.fontWeight = '600'
+              mensaje.style.width = '50%'
+              mensaje.style.margin = '10px auto 100px auto'
+              mensaje.style.padding = '20px'
+              mensaje.style.background = '#FFEB99'
+              mensaje.style.borderRadius = '10px'
+              // Mensaje antes del link
+              mensaje.textContent = 'Thank you for your interest in COR! Visit'
+              const enlace = document.createElement('span')
+              enlace.id = 'enlace'
+              mensaje.appendChild(enlace)
+              // Mensaje despues del link
+              mensaje.insertAdjacentText('beforeend', ' to manage your purchase and start using COR in your organization.')
+              const a = document.createElement('a')
+              a.style.color = '#00C977'
+              a.style.color
+              a.href = 'https://projectcor.com/pricing/'
+              // Nombre del Link
+              a.textContent = ' This Page'
+              enlace.appendChild(a)
+              container.removeChild(form)
+              container.appendChild(mensaje)     
+          // ELSE
+            } else {
+              window.location = 0;
+              }
+      }});
+    </script>
